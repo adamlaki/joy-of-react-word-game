@@ -230,3 +230,53 @@ h1 {
     transform: translateY(0%);
   }
 }
+
+
+/*
+  Keys
+*/
+
+.keys {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  justify-content: center;
+}
+
+.key {
+  --dimension: 2rem;
+  align-items: center;
+  border-radius: 3px;
+  display: flex;
+  font-weight: 700;
+  height: var(--dimension);
+  justify-content: center;
+  text-transform: uppercase;
+  width: var(--dimension);
+}
+
+.key.unused {
+  background-color: var(--color-gray-900);
+}
+
+.key.correct {
+  background: var(--color-success);
+  color: hsl(0 0% 100%);
+}
+
+.key.incorrect {
+  background: var(--color-gray-300);
+  color: hsl(0 0% 100%);
+}
+
+.key.misplaced {
+  background: var(--color-warning);
+  color: hsl(0 0% 100%);
+}
+
+.reset-game {
+  border: 2px solid hsl(0 0% 100%);
+  border-radius: 0.15rem;
+  margin-block-start: 0.5rem;
+  padding: 0.25em 0.5em;
+}
